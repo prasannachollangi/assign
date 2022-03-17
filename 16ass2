@@ -1,0 +1,26 @@
+s=input()
+l1=list(s)
+l=0
+u=0
+d=0
+s=0
+for i in l1:
+  if (i.islower()):
+      l=l+1
+  elif (i.isupper()):
+      u=u+1 
+  elif (i.isdigit()):
+      d=d+1      
+  else:
+      s=s+1
+if l==0 or u==0 or d==0 or s==0:
+    print('password is invalid')
+else:
+    print('Password is valid')
+  OUTPUT:-
+Aditya@123
+Password is valid
+Aditya
+password is invalid  
+      
+      
